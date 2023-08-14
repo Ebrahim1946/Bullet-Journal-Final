@@ -7,10 +7,10 @@ import javafx.scene.control.CheckBox;
  * This class represents a task.
  */
 public class Task {
+  private final DayOfWeek day;
   private String name;
   private String description;
-  private CheckBox completed;
-  private final DayOfWeek day;
+  private final CheckBox completed;
 
 
   /**
@@ -38,30 +38,21 @@ public class Task {
   }
 
   /**
-   * Gets the description of the task.
-   *
-   * @return the description of the task
-   */
-  public String getDescription() {
-    return this.description;
-  }
-
-  /**
-   * Gets the completed status of the task.
-   *
-   * @return the completed status of the task
-   */
-  public CheckBox getCompleted() {
-    return this.completed;
-  }
-
-  /**
    * sets the name of the task.
    *
    * @param name the name to be used
    */
   public void setName(String name) {
     this.name = name;
+  }
+
+  /**
+   * Gets the description of the task.
+   *
+   * @return the description of the task
+   */
+  public String getDescription() {
+    return this.description;
   }
 
   /**
@@ -74,12 +65,12 @@ public class Task {
   }
 
   /**
-   * sets the completed status of the task.
+   * Gets the completed status of the task.
    *
-   * @param completed the completed status to be used
+   * @return the completed status of the task
    */
-  public void setCompleted(CheckBox completed) {
-    this.completed = completed;
+  public CheckBox getCompleted() {
+    return this.completed;
   }
 
   /**

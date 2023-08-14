@@ -24,7 +24,7 @@ public class MiniViewer {
       Alert alert = new Alert(Alert.AlertType.INFORMATION);
       alert.setTitle(((Task) selectedItem).getName());
       alert.setHeaderText(null);
-      alert.setContentText("Description: " + ((Task) selectedItem).getDescription() + "\n" 
+      alert.setContentText("Description: " + ((Task) selectedItem).getDescription() + "\n"
           + "Completed: " + ((Task) selectedItem).getCompleted().isSelected() + "\n" + "Day: "
           + ((Task) selectedItem).getDay());
 

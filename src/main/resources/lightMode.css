@@ -1,6 +1,6 @@
 .root {
     -fx-base: #d0e0e3;
-    -fx-font-family: "Maiandra GD";
+    /*-fx-font-family: "Maiandra GD";*/
 }
 
 .notifications {
